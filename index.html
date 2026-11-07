@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guilherme Martins · Redes, Sistemas e Desenvolvimento</title>
+  <meta name="description" content="Portefólio de Guilherme Martins, estudante de Engenharia Informática no IPCB com formação em Redes e Sistemas Informáticos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a href="#topo" class="logo">gui<span>@</span>martins<span class="cursor">_</span></a>
+    <nav>
+      <a href="#projetos">Projetos</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#formacao">Formação</a>
+      <a href="#certificados">Certificados</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="topo">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <p class="prompt">$ whoami</p>
+      <h1>Guilherme Martins</h1>
+      <p class="tagline">Redes · Sistemas · Desenvolvimento</p>
+      <p class="intro">
+        Estudante de <strong>Engenharia Informática</strong> no Instituto Politécnico de Castelo Branco,
+        com o <strong>CTeSP em Redes e Sistemas Informáticos</strong> concluído.
+        Gosto de perceber como as coisas funcionam por dentro: desde a configuração de uma rede Cisco
+        até uma app Android ou um pipeline de dados na cloud.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#projetos">Ver projetos</a>
+        <a class="btn" href="cv.pdf" target="_blank" rel="noopener">Descarregar CV</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/guilherme-martins-158279309/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn ghost" href="https://github.com/gui198gui" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <ul class="facts">
+        <li><span>📍</span> Gavião, Portugal</li>
+        <li><span>🎓</span> Licenciatura em Eng. Informática (conclusão prevista 2027)</li>
+        <li><span>💼</span> Disponível para part-time / remoto</li>
+      </ul>
+    </section>
+
+    <!-- ===== PROJETOS ===== -->
+    <section id="projetos">
+      <h2><span class="num">01.</span> Projetos</h2>
+      <div class="grid">
+
+        <article class="card">
+          <div class="card-top"><span class="kind">Redes</span></div>
+          <h3>Lab de Redes Sede + Filial</h3>
+          <p>Rede empresarial com duas localizações no Cisco Packet Tracer: VLANs, roteamento entre VLANs,
+             DHCP, OSPF, ACLs e acesso remoto seguro por SSH. Inclui configurações completas e testes de verificação.</p>
+          <ul class="tags"><li>Cisco IOS</li><li>VLAN</li><li>OSPF</li><li>ACL</li><li>Packet Tracer</li></ul>
+          <a class="link" href="https://github.com/gui198gui/lab-redes-packet-tracer" target="_blank" rel="noopener">Ver no GitHub →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-top"><span class="kind">Python · Redes</span></div>
+          <h3>netscan: scanner e monitor de rede</h3>
+          <p>Ferramenta de linha de comandos que descobre os hosts ativos numa rede, testa portas TCP abertas
+             e monitoriza dispositivos, registando quando caem ou voltam. Só usa a biblioteca standard do Python.</p>
+          <ul class="tags"><li>Python</li><li>Sockets</li><li>Multithreading</li><li>CLI</li></ul>
+          <a class="link" href="https://github.com/gui198gui/network-scanner" target="_blank" rel="noopener">Ver no GitHub →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-top"><span class="kind">Mobile</span></div>
+          <h3>TaskMaster</h3>
+          <p>App Android de gestão de tarefas desenvolvida em equipa, com interface em Jetpack Compose,
+             persistência local com Room e arquitetura MVVM.</p>
+          <ul class="tags"><li>Android</li><li>Jetpack Compose</li><li>Room</li><li>MVVM</li></ul>
+          <!-- <a class="link" href="https://github.com/gui198gui/..." target="_blank" rel="noopener">Ver no GitHub →</a> -->
+        </article>
+
+        <article class="card">
+          <div class="card-top"><span class="kind">Web</span></div>
+          <h3>Sistema de Controlo de Férias</h3>
+          <p>Sistema web para gerir os pedidos de férias dos colaboradores, desenvolvido para um cliente
+             fictício no âmbito da licenciatura.</p>
+          <ul class="tags"><li>Web</li><li>Base de dados</li></ul>
+          <!-- <a class="link" href="https://github.com/gui198gui/..." target="_blank" rel="noopener">Ver no GitHub →</a> -->
+        </article>
+
+        <article class="card">
+          <div class="card-top"><span class="kind">Cloud · Dados</span></div>
+          <h3>Pipeline de dados na AWS</h3>
+          <p>Projeto final (Capstone) do curso AWS Academy Data Engineering: pipeline para recolher,
+             transformar e analisar dados de capturas de pesca na AWS.</p>
+          <ul class="tags"><li>AWS</li><li>Data Engineering</li></ul>
+        </article>
+
+        <article class="card">
+          <div class="card-top"><span class="kind">Em curso</span></div>
+          <h3>AlbAir</h3>
+          <p>Projeto da licenciatura (em equipa): aplicação de previsão e análise da qualidade do ar
+             em zonas urbanas.</p>
+          <ul class="tags"><li>Qualidade do ar</li><li>Análise de dados</li></ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== EXPERIÊNCIA ===== -->
+    <section id="experiencia">
+      <h2><span class="num">02.</span> Experiência</h2>
+      <div class="timeline">
+        <div class="item">
+          <p class="when">2023</p>
+          <div>
+            <h3>Estagiário de Redes e Sistemas · Câmara Municipal de Gavião</h3>
+            <p>Estágio do CTeSP. Instalação e configuração de 8 Access Points Cisco na Biblioteca Municipal
+               e no edifício da Câmara, incluindo a remoção dos equipamentos antigos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FORMAÇÃO ===== -->
+    <section id="formacao">
+      <h2><span class="num">03.</span> Formação</h2>
+      <div class="timeline">
+        <div class="item">
+          <p class="when">2023 – 2027</p>
+          <div>
+            <h3>Licenciatura em Engenharia Informática</h3>
+            <p>Instituto Politécnico de Castelo Branco (ESTCB). Desenvolvimento de software, aplicações web e mobile,
+               bases de dados e cloud computing.</p>
+          </div>
+        </div>
+        <div class="item">
+          <p class="when">2021 – 2023</p>
+          <div>
+            <h3>CTeSP em Redes e Sistemas Informáticos</h3>
+            <p>Instituto Politécnico de Castelo Branco. Administração de redes e sistemas, com estágio na
+               Câmara Municipal de Gavião.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CERTIFICADOS ===== -->
+    <section id="certificados">
+      <h2><span class="num">04.</span> Certificados</h2>
+      <ul class="certs">
+        <li><strong>AWS Academy</strong> Data Engineering</li>
+        <li><strong>Cisco NetAcad</strong> Cybersecurity Essentials</li>
+        <li><strong>Cisco NetAcad</strong> Introduction to Cybersecurity</li>
+        <li><strong>Cisco NetAcad</strong> Introduction to IoT</li>
+        <li><strong>NDG</strong> Linux Unhatched</li>
+      </ul>
+      <!-- Substitui o link abaixo pelo teu perfil Credly -->
+      <a class="link" href="https://www.credly.com/" target="_blank" rel="noopener">Ver badges no Credly →</a>
+    </section>
+
+    <!-- ===== COMPETÊNCIAS ===== -->
+    <section id="competencias">
+      <h2><span class="num">05.</span> Competências</h2>
+      <div class="skills">
+        <div>
+          <h3>Linguagens</h3>
+          <ul class="tags"><li>Java</li><li>Python</li><li>SQL</li><li>JavaScript</li><li>HTML/CSS</li><li>PHP</li><li>C++</li></ul>
+        </div>
+        <div>
+          <h3>Redes e Sistemas</h3>
+          <ul class="tags"><li>Cisco IOS</li><li>VLANs</li><li>Routing</li><li>Access Points</li><li>Linux</li><li>Cibersegurança</li></ul>
+        </div>
+        <div>
+          <h3>Ferramentas</h3>
+          <ul class="tags"><li>Packet Tracer</li><li>Wireshark</li><li>VirtualBox</li><li>Git</li><li>VS Code</li><li>AWS</li></ul>
+        </div>
+        <div>
+          <h3>Idiomas</h3>
+          <ul class="tags"><li>Português (nativo)</li><li>Inglês (muito bom)</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contacto" class="contact">
+      <h2><span class="num">06.</span> Contacto</h2>
+      <p>Estou à procura de uma oportunidade em part-time (de preferência remota) na área de IT.
+         Se achas que posso ajudar, fala comigo!</p>
+      <div class="actions">
+        <a class="btn primary" href="https://www.linkedin.com/in/guilherme-martins-158279309/" target="_blank" rel="noopener">Falar no LinkedIn</a>
+        <a class="btn" href="https://github.com/gui198gui" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="ano">2026</span> Guilherme Martins · Feito à mão com HTML e CSS, alojado no GitHub Pages</p>
+  </footer>
+
+  <script>document.getElementById("ano").textContent = new Date().getFullYear();</script>
+</body>
+</html>
